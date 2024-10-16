@@ -9,6 +9,7 @@ def process_operations(s, q, tp):
     for _ in range(q):
         t, p = tp[_]
         p = int(p)
+        
         s = s[:p] + t + s[p:]
         for start in range(len(s)):
             for end in range(start, len(s)-1):
